@@ -1,0 +1,116 @@
+SCHACK
+
+
+================================
+PRE PSEUDO
+    -Can the pawn move to the new position.
+       --If so is the selected pawn protecting the king?
+       --Or is there an enemy pawn in the way
+            --If so remove that enemy and old enemy position is the new position  
+    
+
+
+LOGIC 
+     SELECTING PAWN / DESELECTING PAWN.
+     MOVING A PAWN.
+     CHECKING FOR COLLISSION.
+     CHECKING FOR POSSIBLE MOVES.
+     DENIEING NON POSSIBLE MOVES.
+     DELETING PAWNS WHEN KILLED.
+     KING CAN NEVER BE IN CHECK.
+     
+
+
+UI
+  DRAW BOARD
+  DRAW PAWNS
+  DRAW USER POSITION. (the position the user wants to move the pawn
+
+BOARD.
+      Grid
+          Color
+     
+PAWNS.
+      Position
+      Character
+   	       sprites
+      Movement
+	      Posibile directions
+
+===================================
+
+
+OBJECTS
+===================================
+BOARD
+     2d array that takes PAWN objects a values.
+     holds value for black and white background.
+
+PAWN (super class for every type of pawn)
+
+ 
+
+===================================
+
+
+
+LÅG PRIORITERAT
+===================================
+
+NETWORK
+       Server
+             positions
+	     positions from and to (saved so other user can see the move)
+             
+
+===================================   
+
+
+
+
+MÅSTE LÄRA MIG
+===================================
+SOCKETS,
+JAVAFX,
+ENUMS,
+
+=================================== 
+
+
+
+	
+USER STORIES
+===================================
+As the Owner I need a board to add characters to.
+
+As the Owner I need to be able to differentiate every pawn type.
+
+As a User I want to be able to move the characters with the right rules.
+
+As a User I want to be able to have a GUI
+===================================  
+
+
+
+
+
+# # # # #
+# # # # #
+# # # # #
+# # # # #
+
+Cell -> Pawn -> pawnType
+
+
+Cell
+	isOccupied
+	
+
+Pawn
+	Type
+	isSelected
+	capture
+	
+PawnType
+	Moves
+	 
